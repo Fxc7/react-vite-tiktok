@@ -4,7 +4,6 @@ import { Toaster } from 'sonner';
 
 import OneRowComponent from './rows/OneRowComponent.jsx';
 import TwoRowsComponent from './rows/TwoRowsComponent.jsx';
-import ThreeRowComponent from './rows/ThreeRowComponent.jsx';
 
 import TiktokComponent from './TiktokComponent.jsx';
 
@@ -20,7 +19,6 @@ const ContentComponent = () => {
                     <OneRowComponent setUrl={handleSetUrl} />
                     <TiktokComponent url={url}/>
                     <TwoRowsComponent />
-                    <ThreeRowComponent />
                 </Container>
             </main>
         </>

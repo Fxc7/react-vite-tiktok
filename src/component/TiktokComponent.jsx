@@ -44,10 +44,10 @@ const TiktokComponent = ({ url }) => {
                             result?.author?.unique_id ? <div><BiUser /> <span onClick={() => window.open('https://www.tiktok.com/@' + result.author.unique_id, '_blank')} className="profile_url fw-bold">{result.author.unique_id}</span> <BiUser /></div> : null
                         }
                         {
-                            result?.duration ? <><PiTimerThin /> <span className="fw-bold pt-3">{result?.duration}</span> <PiTimerThin /></> : null
+                            result?.duration ? <div className="pt-1"><PiTimerThin /> <span className="fw-bold">{result?.duration}</span> <PiTimerThin /></div> : null
                         }
                         {
-                            result?.description ? <p className="fw-bold">{result.description}</p> : <p className="fw-bold pt-3">{result?.uploaded_at}</p>
+                            result?.description ? <p className="fw-bold pt-3 color-gray">{result.description}</p> : <p className="fw-bold pt-3 color-gray">{result?.uploaded_at}</p>
                         }
                     </Col>
                     <Col className="pb-4" lg={7} sm={11}>

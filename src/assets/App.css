@@ -56,6 +56,7 @@ nav {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  max-width: -webkit-fill-available;
 }
 
 nav .container span.navbar-brand {
@@ -109,8 +110,8 @@ main .container .row:nth-child(1) .col button {
   width: 30vh;
   background-color: var(--gray);
   color: var(--black);
+  max-width: -webkit-fill-available;
   transition: all 0.5 ease;
-  -webkit-transition: all 0.5 ease;
   -moz-transition: all 0.5 ease;
   -ms-transition: all 0.5 ease;
   -o-transition: all 0.5 ease;
@@ -124,13 +125,21 @@ main .container .row:nth-child(1) .col p {
   color: var(--gray);
 }
 
-main .container .row:nth-child(2) .col h1 {
+main .container .description-site {
+  max-width: -webkit-fill-available;
+}
+
+main .container .description-site hr {
+  border: 2px dashed var(--danger);
+}
+
+main .container .description-site .col h1 {
   color: var(--light);
 }
 
-main .container .row:nth-child(2) .col p {
+main .container .description-site .col p {
   color: var(--gray);
-  padding-top: 20px;
+  padding-top: 5px;
   font-size: small;
 }
 
@@ -140,10 +149,9 @@ main .container .result-page {
   justify-content: center;
   align-items: center;
   margin: 50px;
-  border-radius: 10px;
   color: var(--black);
   box-shadow: 0 3px 2px rgb(0, 0, 1), 0 2px 10px rgb(0, 0, 1);
-  -webkit-border-radius: 10px;
+  border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
@@ -158,11 +166,11 @@ main .container .result-page .col div span.profile_url {
   cursor: pointer;
   text-decoration: underline;
   transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
+
 main .container .result-page .col div span.profile_url:hover {
   color: var(--danger);
 }
@@ -177,7 +185,6 @@ main .container .description-site {
   margin: 50px;
   justify-content: center;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
