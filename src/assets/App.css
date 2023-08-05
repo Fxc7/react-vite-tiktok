@@ -130,7 +130,7 @@ main .container .row:nth-child(2) .col h1 {
 
 main .container .row:nth-child(2) .col p {
   color: var(--gray);
-  font-weight: 500;
+  padding-top: 20px;
   font-size: small;
 }
 
